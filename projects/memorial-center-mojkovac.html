@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memorial Center Mojkovac — Daniel Bakovic</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">Daniel Bakovic</a>
+        </div>
+
+        <nav>
+            <a href="../index.html#work">Work</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="project-page">
+
+            <div class="project-top">
+
+                <a href="../index.html#work" class="back-link">
+                    ← Back to Work
+                </a>
+
+                <span class="project-number-large">
+                    04 / 09
+                </span>
+
+            </div>
+
+
+            <div class="project-intro">
+
+                <h1>Memorial Center Mojkovac</h1>
+
+                <div class="project-meta">
+                    <span>Architectural Competition</span>
+                    <span>2024</span>
+                </div>
+
+            </div>
+
+
+           <div class="project-image">
+
+    <img src="../images/memorial-center-mojkovac/hero.jpg"
+         alt="Memorial Center Mojkovac">
+
+</div>
+
+
+         <div class="project-text">
+
+    <h2>About the Project</h2>
+
+    <div class="project-info-list">
+
+        <p><strong>Role:</strong> Architectural Designer</p>
+
+        <p><strong>Company:</strong> NORMOTIC FZE</p>
+
+        <p><strong>Project:</strong> Memorial Center Mojkovac</p>
+
+        <p><strong>Competition:</strong> Architectural Competition · 2024</p>
+
+    </div>
+
+    <p>
+        Architectural competition project developed as a proposal
+        for the design of the Memorial Center in Mojkovac.
+    </p>
+
+</div>
+
+
+<div class="project-concept">
+
+    <div class="concept-label">
+        <span></span>
+        <h2>Concept</h2>
+    </div>
+
+    <div class="concept-text">
+
+        <p>
+            The proposed Memorial Center fully embraces the uniqueness and
+            potential of its location, establishing a clear dialogue with the
+            surrounding landscape and the collective memory of the city. The
+            project aims to create a new destination that presents the story of
+            the Battle of Mojkovac through a contemporary architectural and
+            experiential approach.
+        </p>
+
+        <p>
+            The center is conceived as a dialogue between past and future,
+            combining nature, technology, and human experience within a unified
+            narrative. Functionally, the building is organized into two main
+            elements: an integrated reception pavilion containing the supporting
+            facilities, and an exhibition pavilion that appears to float above
+            the existing landscape.
+        </p>
+
+        <p>
+            The exhibition experience combines physical artefacts, digital
+            technologies, and the natural environment to create an immersive
+            and interactive interpretation of the battle and its historical
+            context. The narrative unfolds through movement within a circular
+            exhibition space, developed in collaboration with historians,
+            curators, and artists.
+        </p>
+
+        <p>
+            Advanced technologies, including immersive environments and
+            interactive visualizations, transform the center into a contemporary
+            infotainment space and a place of expanded encounters between the
+            physical and digital worlds.
+        </p>
+
+        <p>
+            Through its architecture, landscape design, material selection, and
+            sustainable strategies, the Memorial Center seeks to create a
+            distinctive, environmentally responsive destination that preserves
+            historical memory while engaging future generations.
+        </p>
+
+    </div>
+<div class="project-details">
+
+    <div class="detail">
+        <span>Location</span>
+        <strong>Mojkovac, Montenegro</strong>
+    </div>
+
+    <div class="detail">
+        <span>Type</span>
+        <strong>Memorial / Cultural</strong>
+    </div>
+
+    <div class="detail">
+        <span>Status</span>
+        <strong>Competition</strong>
+    </div>
+
+    <div class="detail">
+        <span>Year</span>
+        <strong>2024</strong>
+    </div>
+
+</div>
+<div class="project-gallery">
+
+    <div class="gallery-full">
+        <img src="../images/memorial-center-mojkovac/01.jpg" alt="Memorial Center Mojkovac">
+    </div>
+
+    <div class="gallery-title">
+        <span>More Images</span>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="../images/memorial-center-mojkovac/02.jpg" alt="Memorial Center Mojkovac">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/memorial-center-mojkovac/03.jpg" alt="Memorial Center Mojkovac">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/memorial-center-mojkovac/04.jpg" alt="Memorial Center Mojkovac">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/memorial-center-mojkovac/05.jpg" alt="Memorial Center Mojkovac">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/memorial-center-mojkovac/06.jpg" alt="Memorial Center Mojkovac">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/memorial-center-mojkovac/07.jpg" alt="Memorial Center Mojkovac">
+        </div>
+
+    </div>
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">×</button>
+
+    <button class="lightbox-prev" id="lightboxPrev">←</button>
+
+    <img id="lightboxImage" src="" alt="">
+
+    <button class="lightbox-next" id="lightboxNext">→</button>
+
+</div>
+</div>
+</div>
+
+        </section>
+
+    </main>
+<script>
+    const images = document.querySelectorAll(
+        ".project-image img, .gallery-full img, .gallery-item img"
+    );
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxPrev = document.getElementById("lightboxPrev");
+    const lightboxNext = document.getElementById("lightboxNext");
+
+    let currentImage = 0;
+
+    function showImage(index) {
+        currentImage = index;
+        lightboxImage.src = images[currentImage].src;
+        lightboxImage.alt = images[currentImage].alt;
+    }
+
+    images.forEach((image, index) => {
+        image.addEventListener("click", () => {
+            showImage(index);
+            lightbox.classList.add("active");
+        });
+    });
+
+    lightboxClose.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+    });
+
+    lightboxPrev.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        currentImage--;
+
+        if (currentImage < 0) {
+            currentImage = images.length - 1;
+        }
+
+        showImage(currentImage);
+    });
+
+    lightboxNext.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        currentImage++;
+
+        if (currentImage >= images.length) {
+            currentImage = 0;
+        }
+
+        showImage(currentImage);
+    });
+
+    lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+            lightbox.classList.remove("active");
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+
+        if (!lightbox.classList.contains("active")) {
+            return;
+        }
+
+        if (event.key === "ArrowLeft") {
+            currentImage--;
+
+            if (currentImage < 0) {
+                currentImage = images.length - 1;
+            }
+
+            showImage(currentImage);
+        }
+
+        if (event.key === "ArrowRight") {
+            currentImage++;
+
+            if (currentImage >= images.length) {
+                currentImage = 0;
+            }
+
+            showImage(currentImage);
+        }
+
+        if (event.key === "Escape") {
+            lightbox.classList.remove("active");
+        }
+
+    });
+</script>
+</body>
+</html>

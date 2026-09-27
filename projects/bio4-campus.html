@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BIO4 Campus — Daniel Bakovic</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../index.html">Daniel Bakovic</a>
+        </div>
+
+        <nav>
+            <a href="../index.html#work">Work</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="project-page">
+
+            <div class="project-top">
+
+                <a href="../index.html#work" class="back-link">
+                    ← Back to Work
+                </a>
+
+                <span class="project-number-large">
+                    08 / 09
+                </span>
+
+            </div>
+
+
+            <div class="project-intro">
+
+                <h1>BIO4 Campus</h1>
+
+                <div class="project-meta">
+                    <span>International Competition</span>
+                    <span>2022</span>
+                </div>
+
+            </div>
+
+
+           <div class="project-image">
+    <img src="../images/bio4-campus/hero.jpg"
+         alt="BIO4 Campus">
+</div>
+
+
+  <div class="project-text">
+
+    <h2>About the Project</h2>
+
+    <div class="project-info-list">
+
+        <p><strong>Role:</strong> Architectural Designer</p>
+
+        <p><strong>Company:</strong> NORMOTIC FZE</p>
+
+        <p><strong>Project:</strong> BIO4 Campus</p>
+
+        <p><strong>Competition:</strong> International Competition · 2022</p>
+
+    </div>
+
+    <p>
+        International architectural competition project developed as a
+        proposal for the design of the BIO4 Campus in Belgrade, Serbia.
+    </p>
+
+</div>
+<div class="project-concept">
+
+    <div class="concept-label">
+        <span></span>
+        <h2>Concept</h2>
+    </div>
+
+    <div class="concept-text">
+
+        <p>
+            The BIO4 Campus is conceived as an integrated research and
+            educational environment shaped by the existing landscape,
+            topography and natural vegetation of the site.
+        </p>
+
+        <p>
+            The masterplan organizes the campus into three interconnected
+            zones — faculties, research institutes, and research & development
+            activities — linked by a central infrastructure and
+            pedestrian-oriented public axis.
+        </p>
+
+        <p>
+            Existing greenery and the natural terrain become active elements
+            of the urban structure, creating a sequence of public spaces,
+            gathering areas and shared facilities. The concept prioritizes
+            flexibility, connectivity and sustainability, integrating the
+            built environment with the landscape while minimizing vehicular
+            presence throughout the campus.
+        </p>
+
+        <p>
+            The Minglarium and central axis create a shared social heart for
+            the campus.
+        </p>
+
+    </div>
+
+
+<div class="project-details">
+
+    <div class="detail">
+        <span>Location</span>
+        <strong>Belgrade, Serbia</strong>
+    </div>
+
+    <div class="detail">
+        <span>Type</span>
+        <strong>Research / Education</strong>
+    </div>
+
+    <div class="detail">
+        <span>Status</span>
+        <strong>Competition</strong>
+    </div>
+
+    <div class="detail">
+        <span>Year</span>
+        <strong>2022</strong>
+    </div>
+
+</div>
+<div class="project-gallery">
+
+    <div class="gallery-full">
+        <img src="../images/bio4-campus/01.jpg"
+             alt="BIO4 Campus">
+    </div>
+
+    <div class="gallery-title">
+        <span>More Images</span>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/02.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/03.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/04.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/05.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/06.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/07.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/08.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/09.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/10.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/11.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/12.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/13.jpg" alt="BIO4 Campus">
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/bio4-campus/14.jpg" alt="BIO4 Campus">
+        </div>
+
+    </div>
+
+</div>
+        </section>
+
+    </main>
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">×</button>
+
+    <button class="lightbox-prev" id="lightboxPrev">←</button>
+
+    <img id="lightboxImage" src="" alt="">
+
+    <button class="lightbox-next" id="lightboxNext">→</button>
+
+</div>
+
+<script>
+    const images = document.querySelectorAll(
+        ".project-image img, .gallery-full img, .gallery-item img"
+    );
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxPrev = document.getElementById("lightboxPrev");
+    const lightboxNext = document.getElementById("lightboxNext");
+
+    let currentImage = 0;
+
+    function showImage(index) {
+        currentImage = index;
+        lightboxImage.src = images[currentImage].src;
+        lightboxImage.alt = images[currentImage].alt;
+    }
+
+    images.forEach((image, index) => {
+        image.addEventListener("click", () => {
+            showImage(index);
+            lightbox.classList.add("active");
+        });
+    });
+
+    lightboxClose.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+    });
+
+    lightboxPrev.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        currentImage--;
+
+        if (currentImage < 0) {
+            currentImage = images.length - 1;
+        }
+
+        showImage(currentImage);
+    });
+
+    lightboxNext.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        currentImage++;
+
+        if (currentImage >= images.length) {
+            currentImage = 0;
+        }
+
+        showImage(currentImage);
+    });
+
+    lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+            lightbox.classList.remove("active");
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+
+        if (!lightbox.classList.contains("active")) {
+            return;
+        }
+
+        if (event.key === "ArrowLeft") {
+            currentImage--;
+
+            if (currentImage < 0) {
+                currentImage = images.length - 1;
+            }
+
+            showImage(currentImage);
+        }
+
+        if (event.key === "ArrowRight") {
+            currentImage++;
+
+            if (currentImage >= images.length) {
+                currentImage = 0;
+            }
+
+            showImage(currentImage);
+        }
+
+        if (event.key === "Escape") {
+            lightbox.classList.remove("active");
+        }
+
+    });
+</script>
+</body>
+</html>
