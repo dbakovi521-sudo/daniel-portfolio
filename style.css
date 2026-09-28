@@ -78,6 +78,11 @@ main {
     display: block;
     margin-left: 300px;
 }
+@media (max-width: 768px) {
+    .hero h1 img {
+        filter: brightness(0) invert(1);
+    }
+}
 .hero p {
     margin-top: 25px;
     font-size: 18px;
