@@ -817,11 +817,12 @@ h2 {
         display: none !important;
     }
 
-    .logo-mobile {
-        display: block !important;
-        height: 1.6em;
-        width: auto;
-        margin-left: 80px;
-    }
+.logo-mobile {
+    display: block !important;
+    height: 1.6em !important;
+    width: auto !important;
+    margin-left: 80px !important;
+    object-fit: contain !important;
+}
 }
 }
