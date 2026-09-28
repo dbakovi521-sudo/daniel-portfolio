@@ -790,5 +790,11 @@ h2 {
     .concept-text {
         margin-left: 0;
     }
+@media (max-width: 768px) {
 
+    .hero h1 img {
+        filter: invert(1);
+    }
+
+}
 }
