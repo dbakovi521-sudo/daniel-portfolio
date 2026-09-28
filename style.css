@@ -802,4 +802,10 @@ h2 {
     }
 
 }
+    @media (max-width: 768px) {
+    .hero h1 img {
+        filter: brightness(0) invert(1);
+        margin-left: 80px;
+    }
+}
 }
