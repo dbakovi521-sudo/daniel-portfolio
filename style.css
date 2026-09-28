@@ -78,10 +78,23 @@ main {
     display: block;
     margin-left: 300px;
 }
+
+.logo-mobile {
+    display: none !important;
+}
+
 @media (max-width: 768px) {
-    .hero h1 img {
-        filter: brightness(0) invert(1);
+    .logo-desktop {
+        display: none !important;
     }
+
+    .logo-mobile {
+        display: block !important;
+        height: 1.6em;
+        width: auto;
+        margin-left: 80px;
+    }
+}
 }
 .hero p {
     margin-top: 25px;
