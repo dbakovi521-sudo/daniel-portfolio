@@ -809,11 +809,18 @@ h2 {
         display: none;
     }
 
+  .logo-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo-desktop {
+        display: none;
+    }
+
     .logo-mobile {
         display: block;
-        height: 1.6em;
-        width: auto;
-        margin-left: 80px;
+        ...
     }
 }
 }
